@@ -85,18 +85,15 @@
         class="container-fluid main-container container-home p-0 revealator-slideup revealator-once revealator-delay1">
         <div class="color-block d-none d-lg-block"></div>
         <div class="row home-details-container align-items-center">
-            <div class="col-lg-4 bg position-fixed d-none d-lg-block"></div>
+            <img class="myPic col-lg-4 bg position-fixed d-none d-lg-block" style="padding : 0; object-fit: cover;" />
+
             <div class="col-12 col-lg-8 offset-lg-4 home-details text-left text-sm-center text-lg-left">
                 <div>
-                    <img src="../dark/img/myPic.jpg" class="img-fluid main-img-mobile d-none d-sm-block d-lg-none"
-                        alt="my picture" style="object-fit: cover;" />
+                    <img class="myPicTablet img-fluid main-img-mobile d-none d-sm-block d-lg-none" alt="my picture"
+                        style="object-fit: cover;" />
                     <h1 class="text-uppercase poppins-font">I'm AmirHossein.<span>Front-end developer</span></h1>
-                    <p class="open-sans-font">
-                        Passionate front-end developer with a keen interest in UI/UX design, dedicated to creating
-                        enjoyable userexperiences on websites. Enthusiastic about technology and programming, constantly
-                        striving toovercome challenges and learn new skills. Committed to personal growth and becoming
-                        the best in thefi eld. I never say I’m the best or the greatest, but trying to become the best
-                        is a kind of great isn’t it?
+                    <p class="open-sans-font description">
+
                     </p>
                     <a class="button" href="about.html">
                         <span class="button-text">more about me</span>
@@ -104,7 +101,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+            </img>
     </section>
     <!-- Main Content Ends -->
 
@@ -120,6 +117,41 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/custom.js"></script>
+
+
+    <script>
+        const apiEndpoint = 'http://localhost/PortfolioCMS/wp-json/wp/v2/homepage';
+        const description = document.querySelector('.description');
+        const myPic = document.querySelector('.myPic');
+        const myPicTablet = document.querySelector('.myPicTablet');
+
+
+
+        async function fetchData() {
+            try {
+                const response = await fetch(apiEndpoint);
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                console.log(data[0].profile_pic.guid);
+                description.textContent = data[0].description;
+                myPic.src = data[0].profile_pic.guid;
+                myPicTablet.src = data[0].profile_pic.guid;
+
+
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+
+        fetchData();
+
+
+    </script>
 
 </body>
 
