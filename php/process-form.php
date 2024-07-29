@@ -1,18 +1,27 @@
 <?php
-if (isset($_REQUEST['name'],$_REQUEST['email'])) {
-      
-    $name = $_REQUEST['name'];
-    $mail = $_REQUEST['email'];
-    $subject = $_REQUEST['subject'];
-    $message = $_REQUEST['message'];
-
-    // Set your email address where you want to receive emails.
-    $to = 'amircr7h3@gmail.com';
-
-    $headers = "From: ".$name." <".$mail."> \r\n";
-
-    $send_email = mail($to,$subject,$message,$headers);
-
-    echo ($send_email) ? 'success' : 'error';
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Retrieve form data
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $subject = htmlspecialchars($_POST['subject']);
+    $message = htmlspecialchars($_POST['message']);
+    
+    // Email details
+    $to = "your-email@example.com";  // Replace with your email address
+    $email_subject = "New Contact Form Submission: " . $subject;
+    $email_body = "Name: $name\n";
+    $email_body .= "Email: $email\n";
+    $email_body .= "Message:\n$message\n";
+    
+    // Headers
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    
+    // Send email
+    if (mail($to, $email_subject, $email_body, $headers)) {
+        echo "Message sent successfully!";
+    } else {
+        echo "Failed to send message. Please try again later.";
+    }
 }
 ?>
