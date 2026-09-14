@@ -17,114 +17,108 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/skins/yellow.css" rel="stylesheet">
     <link href="css/portfolio-updates.css" rel="stylesheet">
+    <style>
+        .about-stats-grid { row-gap: 30px; }
+        .about-stats-grid .box-stats { min-height: 174px; display: flex; flex-direction: column; justify-content: center; }
+        .about-stats-grid .box-stats h3 { margin-bottom: 12px; }
+        .about-stats-grid .stat-label { max-width: 170px; line-height: 1.7; }
+        .about-stats-grid .box-stats h3::after { content: none !important; }
+    </style>
     <script src="js/modernizr.custom.js"></script>
 </head>
 <body class="about">
-    <header class="header" id="navbar-collapse-toggle">
-        <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-            <li class="icon-box"><i class="fa fa-home"></i><a href="index.html"><h2>Home</h2></a></li>
-            <li class="icon-box active"><i class="fa fa-user"></i><a href="about.html"><h2>About</h2></a></li>
-            <li class="icon-box"><i class="fa fa-briefcase"></i><a href="portfolio.html"><h2>Portfolio</h2></a></li>
-            <li class="icon-box"><i class="fa fa-envelope-open"></i><a href="contact.html"><h2>Contact</h2></a></li>
-        </ul>
-        <nav role="navigation" class="d-block d-lg-none">
-            <div id="menuToggle">
-                <input type="checkbox" /><span></span><span></span><span></span>
-                <ul class="list-unstyled" id="menu">
-                    <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                    <li class="active"><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                    <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                    <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<header class="header" id="navbar-collapse-toggle">
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+        <li class="icon-box"><i class="fa fa-home"></i><a href="index.html"><h2>Home</h2></a></li>
+        <li class="icon-box active"><i class="fa fa-user"></i><a href="about.html"><h2>About</h2></a></li>
+        <li class="icon-box"><i class="fa fa-briefcase"></i><a href="portfolio.html"><h2>Portfolio</h2></a></li>
+        <li class="icon-box"><i class="fa fa-envelope-open"></i><a href="contact.html"><h2>Contact</h2></a></li>
+    </ul>
+    <nav role="navigation" class="d-block d-lg-none">
+        <div id="menuToggle"><input type="checkbox" /><span></span><span></span><span></span>
+            <ul class="list-unstyled" id="menu">
+                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
+                <li class="active"><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
+                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
+                <li><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-    <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
-        <h1>ABOUT <span>ME</span></h1>
-        <span class="title-bg">Profile</span>
-    </section>
+<section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
+    <h1>ABOUT <span>ME</span></h1>
+    <span class="title-bg">Profile</span>
+</section>
 
-    <section class="main-content revealator-slideup revealator-once revealator-delay1">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-5 col-xl-6">
-                    <h3 class="text-uppercase custom-title mb-0 ft-wt-600">Professional profile</h3>
-                    <p class="open-sans-font about-summary">
-                        Frontend Engineer with 4+ years of professional experience building production web applications. My main focus is React, Next.js and TypeScript, with hands-on experience in frontend architecture, performance optimization, responsive interfaces, testing and modern development workflows.
-                    </p>
-                    <div class="row">
-                        <div class="col-6">
-                            <ul class="about-list list-unstyled open-sans-font">
-                                <li><span class="title">First name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">AmirHossein</span></li>
-                                <li><span class="title">Last name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Norbakhsh</span></li>
-                                <li><span class="title">Age :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">25 Years</span></li>
-                                <li><span class="title">Nationality :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Iranian</span></li>
-                            </ul>
-                        </div>
-                        <div class="col-6">
-                            <ul class="about-list list-unstyled open-sans-font">
-                                <li><span class="title">Location :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Tehran, Iran</span></li>
-                                <li><span class="title">Email :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"><a href="mailto:amircr7h3@gmail.com">amircr7h3@gmail.com</a></span></li>
-                                <li><span class="title">LinkedIn :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"><a href="https://www.linkedin.com/in/amirnbk/" target="_blank">/in/amirnbk</a></span></li>
-                                <li><span class="title">GitHub :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"><a href="https://github.com/AmirNBK" target="_blank">AmirNBK</a></span></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="mt-3">
-                        <a class="button" href="https://drive.usercontent.google.com/u/0/uc?id=1d8xtCjWzU-sdUKx0A4f3b0rFlA9P6Hbf&export=download" target="_blank">
-                            <span class="button-text">Download CV</span><span class="button-icon fa fa-download"></span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="col-12 col-lg-7 col-xl-6 mt-5 mt-lg-0">
-                    <div class="row">
-                        <div class="col-6"><div class="box-stats with-margin"><h3 class="poppins-font position-relative">4+</h3><p class="open-sans-font m-0 position-relative text-uppercase stat-label">years of <span class="d-block">professional frontend experience</span></p></div></div>
-                        <div class="col-6"><div class="box-stats with-margin"><h3 class="poppins-font position-relative">10+</h3><p class="open-sans-font m-0 position-relative text-uppercase stat-label">selected <span class="d-block">projects</span></p></div></div>
-                        <div class="col-6"><div class="box-stats"><h3 class="poppins-font position-relative">React</h3><p class="open-sans-font m-0 position-relative text-uppercase stat-label">primary <span class="d-block">frontend stack</span></p></div></div>
-                        <div class="col-6"><div class="box-stats"><h3 class="poppins-font position-relative">Web</h3><p class="open-sans-font m-0 position-relative text-uppercase stat-label">performance &amp; <span class="d-block">responsive UX</span></p></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <hr class="separator">
-
-            <div class="row skill-groups">
-                <div class="col-12"><h3 class="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center custom-title ft-wt-600">Skills &amp; Tools</h3></div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>Frontend</h4><p>React · Next.js · TypeScript · JavaScript · Vue.js · Svelte</p></div></div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>State &amp; Data</h4><p>Zustand · Redux · React Query · REST APIs · GraphQL</p></div></div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>UI &amp; Styling</h4><p>Tailwind CSS · SCSS · MUI · shadcn/ui · Bootstrap · Ant Design</p></div></div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>Quality &amp; Performance</h4><p>Vitest · Jest · Storybook · Lighthouse · Core Web Vitals · React Profiler · Sentry</p></div></div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>Engineering</h4><p>Git · Azure DevOps · CI/CD · Husky · responsive architecture · code reviews</p></div></div>
-                <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>Additional</h4><p>Figma implementation · CMS-driven pages · multilingual interfaces · AI-assisted development with human validation</p></div></div>
-            </div>
-
-            <hr class="separator mt-1">
-
-            <div class="row">
-                <div class="col-12"><h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600">Experience <span>&amp;</span> Education</h3></div>
-
-                <div class="col-lg-6 m-15px-tb">
-                    <div class="resume-box"><ul>
-                        <li><div class="icon"><i class="fa fa-briefcase"></i></div><span class="time open-sans-font text-uppercase">Sep 2024 - Present</span><h5 class="poppins-font text-uppercase">Frontend Engineer <span class="place open-sans-font">FlyToday</span></h5><p class="open-sans-font">Building and maintaining production features for FlyToday's international travel platform with React, Next.js, TypeScript and Zustand. Owns major areas including Visa, City Tour and User Profile, with work across multilingual and RTL/LTR experiences, responsive UX, performance, testing, Storybook, Sentry and CI/CD workflows. Led the Pages Router to App Router migration for owned services and contributes to code reviews and frontend architecture.</p></li>
-                        <li><div class="icon"><i class="fa fa-briefcase"></i></div><span class="time open-sans-font text-uppercase">Oct 2023 - Sep 2024</span><h5 class="poppins-font text-uppercase">Frontend Developer <span class="place open-sans-font">TAM Iran Khodro</span></h5><p class="open-sans-font">Modernized and maintained legacy frontend applications using React and modern frontend practices, with a strong focus on reusable architecture, responsive interfaces, performance and maintainability. Collaborated with software engineers and worked with production software development workflows.</p></li>
-                        <li><div class="icon"><i class="fa fa-briefcase"></i></div><span class="time open-sans-font text-uppercase">Jun 2023 - May 2024</span><h5 class="poppins-font text-uppercase">Frontend Developer - Contract / Part-time <span class="place open-sans-font">Zafre Media</span></h5><p class="open-sans-font">Delivered multiple React and Next.js projects, working with Vue.js, Nuxt.js and Svelte.js when required. Built responsive interfaces, integrated APIs, and worked with technologies including GraphQL and Tailwind CSS.</p></li>
-                        <li><div class="icon"><i class="fa fa-briefcase"></i></div><span class="time open-sans-font text-uppercase">Nov 2021 - Mar 2023</span><h5 class="poppins-font text-uppercase">Frontend Developer - Remote <span class="place open-sans-font">Maral Host</span></h5><p class="open-sans-font">Progressed from an internship into independent production ownership, including frontend delivery for the NetSpider website. Worked with React, TypeScript, REST APIs, reusable components, responsive UI and cross-browser production delivery.</p></li>
+<section class="main-content revealator-slideup revealator-once revealator-delay1">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-5 col-xl-6">
+                <h3 class="text-uppercase custom-title mb-0 ft-wt-600">Professional profile</h3>
+                <p class="open-sans-font about-summary">Frontend Engineer with 4+ years of professional experience building production web applications. My main focus is React, Next.js and TypeScript, with hands-on experience in frontend architecture, performance optimization, responsive interfaces, testing and modern development workflows.</p>
+                <div class="row">
+                    <div class="col-6"><ul class="about-list list-unstyled open-sans-font">
+                        <li><span class="title">First name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">AmirHossein</span></li>
+                        <li><span class="title">Last name :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Norbakhsh</span></li>
+                        <li><span class="title">Age :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">25 Years</span></li>
+                        <li><span class="title">Nationality :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Iranian</span></li>
+                    </ul></div>
+                    <div class="col-6"><ul class="about-list list-unstyled open-sans-font">
+                        <li><span class="title">Location :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block">Tehran, Iran</span></li>
+                        <li><span class="title">Email :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"><a href="mailto:amircr7h3@gmail.com">amircr7h3@gmail.com</a></span></li>
+                        <li><span class="title">LinkedIn :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"><a href="https://www.linkedin.com/in/amirnbk/" target="_blank" rel="noopener">/in/amirnbk</a></span></li>
+                        <li><span class="title">GitHub :</span> <span class="value d-block d-sm-inline-block d-lg-block d-xl-inline-block"><a href="https://github.com/AmirNBK" target="_blank" rel="noopener">AmirNBK</a></span></li>
                     </ul></div>
                 </div>
+                <div class="mt-3">
+                    <a class="button" href="https://drive.usercontent.google.com/u/0/uc?id=1d8xtCjWzU-sdUKx0A4f3b0rFlA9P6Hbf&export=download" target="_blank" rel="noopener">
+                        <span class="button-text">Download CV</span><span class="button-icon fa fa-download"></span>
+                    </a>
+                </div>
+            </div>
 
-                <div class="col-lg-6 m-15px-tb">
-                    <div class="resume-box"><ul>
-                        <li><div class="icon"><i class="fa fa-graduation-cap"></i></div><span class="time open-sans-font text-uppercase">2022 - Present</span><h5 class="poppins-font text-uppercase">Master of Computer Engineering <span class="place open-sans-font">Azad University, Research Sciences Unit</span></h5><p class="open-sans-font">Master's studies in Computer Engineering with a focus on Computer Architecture.</p></li>
-                        <li><div class="icon"><i class="fa fa-graduation-cap"></i></div><span class="time open-sans-font text-uppercase">2018 - 2022</span><h5 class="poppins-font text-uppercase">Bachelor of Computer Engineering <span class="place open-sans-font">Semnan National University</span></h5><p class="open-sans-font">Computer Engineering degree with a foundation in computer science and engineering principles.</p></li>
-                        <li><div class="icon"><i class="fa fa-language"></i></div><span class="time open-sans-font text-uppercase">Languages</span><h5 class="poppins-font text-uppercase">English <span class="place open-sans-font">B2 (Upper-Intermediate)</span></h5><p class="open-sans-font">Persian — Native · English — B2 (Upper-Intermediate)</p></li>
-                    </ul></div>
+            <div class="col-12 col-lg-7 col-xl-6 mt-5 mt-lg-0">
+                <div class="row about-stats-grid">
+                    <div class="col-6"><div class="box-stats"><h3 class="poppins-font position-relative">4+</h3><p class="open-sans-font m-0 position-relative text-uppercase stat-label">years of <span class="d-block">professional frontend experience</span></p></div></div>
+                    <div class="col-6"><div class="box-stats"><h3 class="poppins-font position-relative">10+</h3><p class="open-sans-font m-0 position-relative text-uppercase stat-label">selected <span class="d-block">projects</span></p></div></div>
+                    <div class="col-6"><div class="box-stats"><h3 class="poppins-font position-relative">React</h3><p class="open-sans-font m-0 position-relative text-uppercase stat-label">primary <span class="d-block">frontend stack</span></p></div></div>
+                    <div class="col-6"><div class="box-stats"><h3 class="poppins-font position-relative">Web</h3><p class="open-sans-font m-0 position-relative text-uppercase stat-label">performance &amp; <span class="d-block">responsive UX</span></p></div></div>
                 </div>
             </div>
         </div>
-    </section>
 
-    <script src="js/jquery-3.5.0.min.js"></script><script src="js/preloader.min.js"></script><script src="js/fm.revealator.jquery.min.js"></script><script src="js/imagesloaded.pkgd.min.js"></script><script src="js/masonry.pkgd.min.js"></script><script src="js/classie.js"></script><script src="js/cbpGridGallery.js"></script><script src="js/jquery.hoverdir.js"></script><script src="js/popper.min.js"></script><script src="js/bootstrap.js"></script><script src="js/custom.js"></script>
+        <hr class="separator">
+
+        <div class="row skill-groups">
+            <div class="col-12"><h3 class="text-uppercase pb-4 pb-sm-5 mb-3 mb-sm-0 text-left text-sm-center custom-title ft-wt-600">Skills &amp; Tools</h3></div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>Frontend</h4><p>React · Next.js · TypeScript · JavaScript · Vue.js · Svelte</p></div></div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>State &amp; Data</h4><p>Zustand · Redux · React Query · REST APIs · GraphQL</p></div></div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>UI &amp; Styling</h4><p>Tailwind CSS · SCSS · MUI · shadcn/ui · Bootstrap · Ant Design</p></div></div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>Quality &amp; Performance</h4><p>Vitest · Jest · Storybook · Lighthouse · Core Web Vitals · React Profiler · Sentry</p></div></div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>Engineering</h4><p>Git · Azure DevOps · CI/CD · Husky · responsive architecture · code reviews</p></div></div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4"><div class="skill-group"><h4>Additional</h4><p>Figma implementation · CMS-driven pages · multilingual interfaces · AI-assisted development with human validation</p></div></div>
+        </div>
+
+        <hr class="separator mt-1">
+
+        <div class="row">
+            <div class="col-12"><h3 class="text-uppercase pb-5 mb-0 text-left text-sm-center custom-title ft-wt-600">Experience <span>&amp;</span> Education</h3></div>
+            <div class="col-lg-6 m-15px-tb"><div class="resume-box"><ul>
+                <li><div class="icon"><i class="fa fa-briefcase"></i></div><span class="time open-sans-font text-uppercase">Sep 2024 - Present</span><h5 class="poppins-font text-uppercase">Frontend Engineer <span class="place open-sans-font">FlyToday</span></h5><p class="open-sans-font">Building and maintaining production features for FlyToday's international travel platform with React, Next.js, TypeScript and Zustand. Owns major areas including Visa, City Tour and User Profile, with work across multilingual and RTL/LTR experiences, responsive UX, performance, testing, Storybook, Sentry and CI/CD workflows. Led the Pages Router to App Router migration for owned services and contributes to code reviews and frontend architecture.</p></li>
+                <li><div class="icon"><i class="fa fa-briefcase"></i></div><span class="time open-sans-font text-uppercase">Oct 2023 - Sep 2024</span><h5 class="poppins-font text-uppercase">Frontend Developer <span class="place open-sans-font">TAM Iran Khodro</span></h5><p class="open-sans-font">Modernized and maintained legacy frontend applications using React and modern frontend practices, with a strong focus on reusable architecture, responsive interfaces, performance and maintainability.</p></li>
+                <li><div class="icon"><i class="fa fa-briefcase"></i></div><span class="time open-sans-font text-uppercase">Jun 2023 - May 2024</span><h5 class="poppins-font text-uppercase">Frontend Developer - Contract / Part-time <span class="place open-sans-font">Zafre Media</span></h5><p class="open-sans-font">Delivered multiple React and Next.js projects, working with Vue.js, Nuxt.js and Svelte.js when required. Built responsive interfaces, integrated APIs, and worked with technologies including GraphQL and Tailwind CSS.</p></li>
+                <li><div class="icon"><i class="fa fa-briefcase"></i></div><span class="time open-sans-font text-uppercase">Nov 2021 - Mar 2023</span><h5 class="poppins-font text-uppercase">Frontend Developer - Remote <span class="place open-sans-font">Maral Host</span></h5><p class="open-sans-font">Progressed from an internship into independent production ownership, including frontend delivery for the NetSpider website. Worked with React, TypeScript, REST APIs, reusable components, responsive UI and cross-browser production delivery.</p></li>
+            </ul></div></div>
+            <div class="col-lg-6 m-15px-tb"><div class="resume-box"><ul>
+                <li><div class="icon"><i class="fa fa-graduation-cap"></i></div><span class="time open-sans-font text-uppercase">2022 - Present</span><h5 class="poppins-font text-uppercase">Master of Computer Engineering <span class="place open-sans-font">Azad University, Research Sciences Unit</span></h5><p class="open-sans-font">Master's studies in Computer Engineering with a focus on Computer Architecture.</p></li>
+                <li><div class="icon"><i class="fa fa-graduation-cap"></i></div><span class="time open-sans-font text-uppercase">2018 - 2022</span><h5 class="poppins-font text-uppercase">Bachelor of Computer Engineering <span class="place open-sans-font">Semnan National University</span></h5><p class="open-sans-font">Computer Engineering degree with a foundation in computer science and engineering principles.</p></li>
+                <li><div class="icon"><i class="fa fa-language"></i></div><span class="time open-sans-font text-uppercase">Languages</span><h5 class="poppins-font text-uppercase">English <span class="place open-sans-font">B2 (Upper-Intermediate)</span></h5><p class="open-sans-font">Persian — Native · English — B2 (Upper-Intermediate)</p></li>
+            </ul></div></div>
+        </div>
+    </div>
+</section>
+
+<script src="js/jquery-3.5.0.min.js"></script><script src="js/preloader.min.js"></script><script src="js/fm.revealator.jquery.min.js"></script><script src="js/imagesloaded.pkgd.min.js"></script><script src="js/masonry.pkgd.min.js"></script><script src="js/classie.js"></script><script src="js/cbpGridGallery.js"></script><script src="js/jquery.hoverdir.js"></script><script src="js/popper.min.js"></script><script src="js/bootstrap.js"></script><script src="js/custom.js"></script>
 </body>
 </html>
