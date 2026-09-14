@@ -1,0 +1,175 @@
+/* AmirHossein portfolio refresh - preserves the original Tunis theme while modernizing content and recruiter-facing presentation. */
+
+.profile-intro {
+    max-width: 760px;
+}
+
+.profile-intro .eyebrow {
+    display: block;
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.profile-intro .eyebrow span {
+    color: #ffb400;
+}
+
+.profile-intro .lead {
+    margin-bottom: 26px;
+    max-width: 680px;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.about-summary {
+    margin: 0 0 28px;
+    color: #d6d6d6;
+    line-height: 1.85;
+}
+
+.stat-label {
+    max-width: 120px;
+}
+
+.skill-groups {
+    margin-top: 8px;
+}
+
+.skill-group {
+    height: 100%;
+    padding: 24px 22px;
+    border: 1px solid #252525;
+    border-radius: 4px;
+    background: #151515;
+    transition: transform .25s ease, border-color .25s ease;
+}
+
+.skill-group:hover {
+    transform: translateY(-3px);
+    border-color: #ffb400;
+}
+
+.skill-group h4 {
+    margin-bottom: 12px;
+    color: #ffb400;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.skill-group p {
+    margin: 0;
+    color: #ddd;
+    line-height: 1.85;
+}
+
+.featured-work {
+    margin-bottom: 48px;
+}
+
+.featured-work-intro {
+    margin: 0 auto 28px;
+    max-width: 820px;
+    color: #cfcfcf;
+    line-height: 1.8;
+}
+
+.featured-work-card {
+    height: 100%;
+    padding: 26px;
+    border: 1px solid #252525;
+    border-radius: 6px;
+    background: #151515;
+}
+
+.featured-work-card h4 {
+    margin-bottom: 8px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.featured-work-card .meta {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffb400;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .7px;
+    text-transform: uppercase;
+}
+
+.featured-work-card p {
+    margin-bottom: 16px;
+    color: #cfcfcf;
+    line-height: 1.7;
+}
+
+.featured-work-card a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.featured-work-card a:hover {
+    color: #ffb400;
+}
+
+.portfolio-grid figure img {
+    height: 290px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio-grid figure {
+    overflow: hidden;
+}
+
+.portfolio-grid figcaption p {
+    margin: 4px 0 16px;
+    color: #bdbdbd;
+}
+
+.portfolio-stack {
+    display: inline-block;
+    margin-bottom: 8px;
+    color: #ffb400;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+}
+
+.contact-intro {
+    margin-bottom: 28px;
+}
+
+.contact-intro strong {
+    color: #ffb400;
+}
+
+.contact-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-links a:hover {
+    color: #ffb400;
+}
+
+@media (max-width: 991px) {
+    .profile-intro .lead {
+        font-size: 16px;
+    }
+
+    .featured-work-card {
+        margin-bottom: 20px;
+    }
+
+    .portfolio-grid figure img {
+        height: auto;
+    }
+}
